@@ -14,22 +14,22 @@ import utilities.TestBase;
 import java.time.Duration;
 
 public class C20_ActionsS136 extends TestBase {
-/*
+
     @Test
-    public void test01(){
+    public void test01() {
+        Actions action = new Actions(driver);
         //1- Bir Class olusturalim KeyboardActions2++
         //2- https://html.com/tags/iframe/ sayfasina gidelim
         driver.get("https://html.com/tags/iframe/");
         //3- video’yu gorecek kadar asagi inin
-        Actions action =new Actions(driver);
-        action.sendKeys(Keys.PAGE_DOWN).perform();
-        action.sendKeys(Keys.PAGE_DOWN).perform();
-        WebElement frameBolumu= driver.findElement(By.linkText("https://www.youtube.com/embed/owsfdh4gxyc"));
-        driver.switchTo().frame(frameBolumu);
-       //4- videoyu izlemek icin Play tusuna basin
-       driver.findElement(By.xpath("//div[@id='player']")).click();
+        action.sendKeys(Keys.PAGE_DOWN);
+        action.sendKeys(Keys.PAGE_DOWN);
+        action.moveToElement(driver.findElement(By.xpath("//div[@id='player']")));
+
+               //4- videoyu izlemek icin Play tusuna basin
+        driver.findElement(By.xpath("//div[@id='player']")).click();
 
         //5- videoyu calistirdiginizi test edin
-        */
 
+    }
 }
